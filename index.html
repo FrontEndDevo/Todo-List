@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="CSS/Normalize.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Todo List</title>
+    <!-- Website Icon -->
+    <link rel="Icon" href="img/list.png">
+</head>
+<body>
+        <div class="container mt-5 text-light">
+            <!-- First row (Title) -->
+            <div class="row fs-1 fw-bold text-center">
+                <div class="col-12 mt-5 bg-dark rounded p-4">
+                    <span class="text-danger me-3">FrontEndDevo</span>
+                    <span class="text-info ">[Todo List ]</span>
+                </div>
+            </div>
+
+            <!-- Second row (Input field + Add btn) -->
+            <div class="row mt-5 d-flex justify-content-center align-items-center text-center">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="input-group flex-nowrap">
+                    <input type="text" class="my-input form-control bg-transparent border-0 fs-2 fw-bold py-3 px-5 ms-5 rounded-pill mb-4" placeholder="Add New Todo">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                <button type="button" class="add btn btn-primary fs-3 fw-bold py-2 px-5">Add</button>
+                </div>
+            </div>
+        
+            <!-- Third row (Tasks div + Delete btn) -->
+            <div class="row maindiv d-none border border-info border-4 mt-5 fs-1 fw-bold d-flex align-items-center bg-transparent w-75 mx-auto text-dark rounded-3">
+                <!-- Check box -->
+                <div class="col-1">
+                    <div class="form-check">
+                    <input class="check form-check-input bg-transparent" type="checkbox">
+                    </div>
+                </div>
+
+                <!-- Main div -->
+                <div class="tasks col-9 fw-normal overflow-hidden"></div>
+
+                <!-- Delete btn -->
+                <div class="col-2">
+                <button type="button" class="del btn btn-danger px-3 py-3">Delete</button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="JS/bootstrap.min.js">
+    <!-- JS -->
+    <script src="JS/script.js"></script>
+</body>
+</html>
